@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haron Kurian John</title>
     <link rel="stylesheet" href="./Style.css">
+    <!-- Modern fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -28,7 +32,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container d-flex justify-content-center">
                     <div class="text-center">
-                        <button style="color: #FFD700;" class="navbar-toggler toggler-btn " type="button"
+                        <button class="navbar-toggler toggler-btn " type="button"
                             data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fa-solid fa-bars fa-lg"></i>
@@ -38,6 +42,7 @@
                                 <a class=" active item" aria-current="page" href="#home">Home</a>
                                 <a class=" item" href="#about">About</a>
                                 <a class=" item" href="#skills">Skills</a>
+                                <a class=" item" href="#services">Services</a>
                                 <a class=" item" href="#projects">Projects</a>
                                 <a class=" item" href="#contact">Contact</a>
                             </div>
@@ -49,8 +54,8 @@
             <!-- home section -->
             <section id="home" class="home-section d-flex align-items-center justify-content-center">
                 <div class="home-content text-center">
-                    <h1>Hello, I'm <span style="color: #FFD700;">Haron Kurian John</span></h1>
-                    <p style="color: gray;"><strong>Data Analyst</strong></p>
+                    <h1>Hello, I'm <span class="accent-text">Haron Kurian John</span></h1>
+                    <p class="muted"><strong>Data Analyst</strong></p>
                     <a href="#about" class="btn fw-bold">Learn More</a>
                 </div>
             </section>
@@ -70,7 +75,7 @@
                         <div class="col-lg-8">
                             <h2 class="section-title fw-bold text-start">ABOUT ME</h2>
                             <p class="about-description">
-                                Hi, I'm <span style="color: #FFD700;">Haron Kurian John</span>, a passionate Data Analyst specializing in using Power BI to turn complex data into clear, understandable visuals.
+                                Hi, I'm <span class="accent-text">Haron Kurian John</span>, a passionate Data Analyst specializing in using Power BI to turn complex data into clear, understandable visuals.
                                  I am passionate about diving into data to find the trends and patterns that help a business make smarter decisions.
                                   With a strong background in statistical analysis and data visualization, I create impactful solutions that help organizations understand their past and shape their future.
                             </p>
@@ -81,7 +86,7 @@
                             <div class=" mt-4">
                                 <a href="./images/HaronKurianJohn_Resume.pdf" id="download" download="HaronKurianJohn_Resume"
                                     class="btn fw-bold px-4 ">
-                                    <i class="fa-solid fa-download" style="color: black;"></i> <span>Download
+                                    <i class="fa-solid fa-download"></i> <span>Download
                                         Resume</span>
                                 </a>
                             </div>
@@ -94,11 +99,10 @@
             <!-- skill section -->
             <section id="skills" class="skills-section py-5 text-light">
                 <div class="container">
-                    <h2 style="color: #48CFCB;" class="text-center mb-5 fw-bold skill-heading">My Skills</h2>
-                    <div class="row text-center partition">
-                        <div class="col-md-8 col-sm-12 mb-4">
-                            <!-- Replace everything inside this .row.partition (the inner one) with the following: -->
-                             <div class="row partition ">
+                    <h2 class="text-center mb-5 fw-bold skill-heading">My Skills</h2>
+                    <div class="row text-center">
+                        <div class="col-12 mb-4">
+                             <div class="row">
                             <!-- Power BI -->
                              <div class="col-md-3 col-sm-6 mb-4">
                                 <div class="skill-card">
@@ -181,51 +185,47 @@
                             </div>
                         </div>
                     </div>
-                        <!-- My Services Section -->
-                        <div class="col-md-4 col-sm-12 mb-4">
-                            <h2 class="text-center mb-5 fw-bold services-heading" style="color: #48CFCB;">MY SERVICES
-                            </h2>
-                            <div style="flex-wrap: wrap;" class="row text-center justify-content-evenly d-flex">
-                                <!-- Service 1 -->
-                                <div class="col-md-5 col-sm-6 mb-4 ">
-                                    <div class="service-card p-4">
-                                        <img src="./images/web-analytics.png" alt="Web Analytics" style="width:65px;height: 65px;" class="mb-3">
-                                        <h4>Data Visualization</h4>
-                                        <p>Finding insights from data to help businesses make better and smart decisions.
-                                        </p>
-                                    </div>
-                                </div>
+            </section>
 
-                                <!-- Service 2 -->
-                                <div class="col-md-5 col-sm-6 mb-4">
-                                    <div class="service-card p-4">
-                                        <img src="https://img.icons8.com/?size=100&id=y6efnQ9315zS&format=png&color=000000">
-                                        <h4>Data Cleaning & Preparation</h4>
-                                        <p>Cleaning, transforming, and preparing raw data using Python, Pandas, and NumPy.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- Service 3 -->
-                                <div class="col-md-5 col-sm-6 mb-4">
-                                    <div class="service-card p-4">
-                                        <img src="https://img.icons8.com/?size=100&id=6xRZJrVWQLNn&format=png&color=000000">
-                                        <h4>Dashboard Development</h4>
-                                        <p>Creating interactive dashboards in Power BI for real-time data monitoring.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- Service 4 -->
-                                 <div class="col-md-5 col-sm-6 mb-4">
-                                    <div class="service-card p-4">
-                                        <img src="https://img.icons8.com/?size=100&id=0vd6ethwJHAw&format=png&color=000000">
-                                        <h4>Data Mining</h4>
-                                        <p>Discovering patterns and relationships in large datasets.
-                                        </p>
-                                    </div>
-                                </div>
+            <!-- services section -->
+            <section id="services" class="services-section py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5 fw-bold services-heading">MY SERVICES</h2>
+                    <div class="row text-center justify-content-center" style="flex-wrap: wrap;">
+                        <!-- Service 1 -->
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="service-card p-4">
+                                <img src="./images/web-analytics.png" alt="Web Analytics" style="width:65px;height: 65px;" class="mb-3">
+                                <h4>Data Visualization</h4>
+                                <p>Finding insights from data to help businesses make better and smart decisions.</p>
+                            </div>
+                        </div>
+                        <!-- Service 2 -->
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="service-card p-4">
+                                <img src="https://img.icons8.com/?size=100&id=y6efnQ9315zS&format=png&color=000000">
+                                <h4>Data Cleaning & Preparation</h4>
+                                <p>Cleaning, transforming, and preparing raw data using Python, Pandas, and NumPy.</p>
+                            </div>
+                        </div>
+                        <!-- Service 3 -->
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="service-card p-4">
+                                <img src="https://img.icons8.com/?size=100&id=6xRZJrVWQLNn&format=png&color=000000">
+                                <h4>Dashboard Development</h4>
+                                <p>Creating interactive dashboards in Power BI for real-time data monitoring.</p>
+                            </div>
+                        </div>
+                        <!-- Service 4 -->
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="service-card p-4">
+                                <img src="https://img.icons8.com/?size=100&id=0vd6ethwJHAw&format=png&color=000000">
+                                <h4>Data Mining</h4>
+                                <p>Discovering patterns and relationships in large datasets.</p>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
 
             <!-- project -->
@@ -331,7 +331,7 @@
                     </div>
                 </div>
                 <!-- Back to Top Button -->
-                <button style="color: black;" id="back-to-top" class="back-to-top-btn d-flex justify-content-center align-items-center">
+                <button id="back-to-top" class="back-to-top-btn d-flex justify-content-center align-items-center">
                     <i class="fa-solid fa-arrow-up"></i>
                 </button>
             </section>
